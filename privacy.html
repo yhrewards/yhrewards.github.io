@@ -1,0 +1,802 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>골드만짠스 개인정보처리방침</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure,
+aside,
+details {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style></head><body><article id="3a543d8c-d048-8004-924b-f7c41e63aefb" class="page sans"><header><h1 class="page-title" dir="auto">골드만짠스 개인정보처리방침</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><p id="cb82f004-61ea-4d79-8eea-44a112edc35d" class="" dir="auto">
+</p><p id="3a543d8c-d048-80d1-9c7f-d8dcb832aa67" class="" dir="auto">YH리워즈(이하 “회사”)는 골드만짠스 서비스를 이용하는 이용자의 개인정보를 중요하게 생각하며, 「개인정보 보호법」 등 관계 법령을 준수합니다.</p><p id="3a543d8c-d048-8094-9b2e-ddda3516c223" class="" dir="auto">회사는 본 개인정보처리방침을 통해 개인정보의 처리 목적, 처리 항목, 보유기간, 파기 절차 및 이용자의 권리와 행사 방법을 안내합니다.</p><hr id="3a543d8c-d048-8070-b617-f9dcd5e5192a" dir="auto"/><h2 id="3a543d8c-d048-8062-b939-dd5c4ec31bea" class="" dir="auto">1. 개인정보의 처리 목적</h2><p id="3a543d8c-d048-80cb-b161-ed80c264bc44" class="" dir="auto">회사는 다음의 목적을 위하여 개인정보를 처리합니다.</p><p id="917e7659-833b-4e09-9c82-cc07183b947b" class="" dir="auto">
+</p><h3 id="3a543d8c-d048-803e-b0a3-d7131f28876a" class="" dir="auto">1) 회원가입 및 회원 관리</h3><ul id="3a543d8c-d048-8039-a69e-df8d96df3449" class="bulleted-list" dir="auto"><li style="list-style-type:disc">회원가입 의사 확인</li></ul><ul id="3a543d8c-d048-8000-9948-cb844d2e9ba5" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이용자 식별 및 로그인 관리</li></ul><ul id="3a543d8c-d048-80b1-882f-d9cff43a0857" class="bulleted-list" dir="auto"><li style="list-style-type:disc">회원 자격 유지 및 관리</li></ul><ul id="3a543d8c-d048-8060-910f-f1a68a4e694e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">중복가입 및 부정 이용 방지</li></ul><ul id="3a543d8c-d048-8026-aa75-fa1b18d42276" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이용약관 위반 이용자에 대한 이용 제한</li></ul><ul id="3a543d8c-d048-8089-80e1-de9d626b0110" class="bulleted-list" dir="auto"><li style="list-style-type:disc">공지사항 및 서비스 관련 안내</li></ul><p id="e5eb4679-ad3c-49e1-9581-e332566e40b1" class="" dir="auto">
+</p><h3 id="3a543d8c-d048-804a-b3dc-dc391e104dff" class="" dir="auto">2) 골드만짠스 서비스 제공</h3><ul id="3a543d8c-d048-8011-b0b1-e3b96c281315" class="bulleted-list" dir="auto"><li style="list-style-type:disc">출석체크, 퀴즈, 룰렛 및 경제교육 콘텐츠 제공</li></ul><ul id="3a543d8c-d048-801f-8327-d15b1126649f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">일반 포인트와 골드 포인트의 적립·사용·잔액 관리</li></ul><ul id="3a543d8c-d048-8029-a076-ef0c0b3080db" class="bulleted-list" dir="auto"><li style="list-style-type:disc">기프티콘 구매 및 추첨 서비스 제공</li></ul><ul id="3a543d8c-d048-8018-8e15-f976839942e9" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠팡 랜덤박스 등 골드 포인트 전용 서비스 제공</li></ul><ul id="3a543d8c-d048-802c-af39-cfe77e2140f1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠폰 발급, 보관 및 사용내역 관리</li></ul><ul id="3a543d8c-d048-8007-906d-d5d515f2aea8" class="bulleted-list" dir="auto"><li style="list-style-type:disc">오답노트 및 학습이력 제공</li></ul><p id="6f7e8ab8-086e-49cd-8594-6bcb2deae644" class="" dir="auto">
+</p><h3 id="3a543d8c-d048-80aa-9234-f659cdb3edfd" class="" dir="auto">3) 제휴 쇼핑 적립 처리</h3><ul id="3a543d8c-d048-80a7-a9ba-d4cdbf8d969c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">제휴 쇼핑몰 이동 및 구매 실적 확인</li></ul><ul id="3a543d8c-d048-8014-aa1d-c403d072794e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">적립 예정·확정·취소 내역 관리</li></ul><ul id="3a543d8c-d048-808b-ac57-d1750d193445" class="bulleted-list" dir="auto"><li style="list-style-type:disc">포인트 적립 및 취소 처리</li></ul><ul id="3a543d8c-d048-8042-932b-eed57cfbaf37" class="bulleted-list" dir="auto"><li style="list-style-type:disc">제휴 실적 누락·오류 문의 확인</li></ul><ul id="3a543d8c-d048-807f-843b-cc1291d17459" class="bulleted-list" dir="auto"><li style="list-style-type:disc">부정 적립 및 비정상 거래 방지</li></ul><p id="f08fe7c6-891a-4b89-a600-23fd7ab79d03" class="" dir="auto">
+</p><h3 id="3a543d8c-d048-806d-9c5b-e9cfc21c5d7d" class="" dir="auto">4) 고객지원 및 분쟁 처리</h3><ul id="3a543d8c-d048-8052-9230-e67ef39c3701" class="bulleted-list" dir="auto"><li style="list-style-type:disc">고객문의 접수 및 답변</li></ul><ul id="3a543d8c-d048-8048-8766-c885530144c3" class="bulleted-list" dir="auto"><li style="list-style-type:disc">서비스 오류 및 장애 확인</li></ul><ul id="3a543d8c-d048-808d-a9c6-d324f44643b3" class="bulleted-list" dir="auto"><li style="list-style-type:disc">포인트·쿠폰·제휴 실적 관련 분쟁 처리</li></ul><ul id="3a543d8c-d048-802a-88cc-c134d9618516" class="bulleted-list" dir="auto"><li style="list-style-type:disc">민원 처리 및 처리 결과 안내</li></ul><p id="decc15bf-06b0-4609-9e45-122f19357ae6" class="" dir="auto">
+</p><h3 id="3a543d8c-d048-8025-a8f8-e2b0957ced30" class="" dir="auto">5) 서비스 안정성 및 품질 개선</h3><ul id="3a543d8c-d048-809a-a539-d251a02a8a90" class="bulleted-list" dir="auto"><li style="list-style-type:disc">앱 이용 현황과 서비스 사용 통계 분석</li></ul><ul id="3a543d8c-d048-80e1-a7df-da713212b4d2" class="bulleted-list" dir="auto"><li style="list-style-type:disc">오류 및 장애 로그 분석</li></ul><ul id="3a543d8c-d048-8075-ac0d-ec4c526fb50e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">비정상 접근 및 부정 이용 탐지</li></ul><ul id="3a543d8c-d048-808b-932f-e4ce681acae4" class="bulleted-list" dir="auto"><li style="list-style-type:disc">서비스 기능과 사용자 환경 개선</li></ul><p id="2e58bb00-ed12-4b71-9162-205481854356" class="" dir="auto">
+</p><h3 id="3a543d8c-d048-8094-8e2a-fec783e193e0" class="" dir="auto">6) 광고 제공 및 광고 성과 측정</h3><ul id="3a543d8c-d048-80f5-9185-effa04514220" class="bulleted-list" dir="auto"><li style="list-style-type:disc">광고 표시</li></ul><ul id="3a543d8c-d048-8061-a901-fd01c3794471" class="bulleted-list" dir="auto"><li style="list-style-type:disc">광고 노출 및 이용 현황 측정</li></ul><ul id="3a543d8c-d048-80d9-a4ee-f4d1f02fca4f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">광고 부정 이용 방지</li></ul><ul id="3a543d8c-d048-8042-8292-e4872757e2c0" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이용자의 기기 설정에 따른 맞춤형 또는 비맞춤형 광고 제공</li></ul><hr id="3a543d8c-d048-805b-b197-eafd7b683d50" dir="auto"/><h2 id="3a543d8c-d048-800e-abff-ea8c36a39849" class="" dir="auto">2. 처리하는 개인정보의 항목</h2><p id="3a543d8c-d048-80bb-8c91-d3f2a5daf907" class="" dir="auto">회사는 서비스 제공에 필요한 최소한의 개인정보를 처리합니다.</p><p id="34031494-3b69-4750-ba3f-7c77c2ac062b" class="" dir="auto">
+</p><h3 id="3a543d8c-d048-80b2-b36c-d60732bf9147" class="" dir="auto">1) 회원가입 및 로그인</h3><p id="3a543d8c-d048-80db-a15f-ca43fa102bce" class="" dir="auto"><strong>필수 항목</strong></p><ul id="3a543d8c-d048-8065-8b67-c5a2b4db6f26" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이메일 주소</li></ul><ul id="3a543d8c-d048-807d-9ef9-f64dbce30487" class="bulleted-list" dir="auto"><li style="list-style-type:disc">닉네임</li></ul><ul id="3a543d8c-d048-80fa-81b3-e01f1757d9b1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">회원 식별값</li></ul><ul id="3a543d8c-d048-804a-b65a-df39056fdc21" class="bulleted-list" dir="auto"><li style="list-style-type:disc">가입일시</li></ul><ul id="3a543d8c-d048-80f2-bd64-e0c27c71f0e9" class="bulleted-list" dir="auto"><li style="list-style-type:disc">로그인 및 인증 기록</li></ul><p id="45b105f1-0657-4a80-8055-1bbc1ca60a57" class="" dir="auto">
+</p><p id="3a543d8c-d048-80c4-a5a8-ffc4a0b0ecc7" class="" dir="auto">소셜 로그인을 제공하는 경우 해당 로그인 제공자로부터 다음 정보를 받을 수 있습니다.</p><ul id="3a543d8c-d048-8030-a0b8-d8d78e6d9a0e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">소셜 로그인 제공자가 발급한 이용자 식별값</li></ul><ul id="3a543d8c-d048-80f8-9a12-d2471dd54f64" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이메일 주소</li></ul><ul id="3a543d8c-d048-80bb-962b-f1ad4cdd9c36" class="bulleted-list" dir="auto"><li style="list-style-type:disc">프로필 정보 중 이용자가 제공에 동의한 정보</li></ul><p id="cba3ce83-c7a1-4609-be10-7cae97d1a203" class="" dir="auto">
+</p><p id="3a543d8c-d048-802f-8d0a-c06498c15878" class="" dir="auto">회사는 이용자의 평문 비밀번호를 직접 확인하거나 별도로 보관하지 않으며, 로그인 인증은 인증 서비스의 보안 절차를 통해 처리합니다.</p><p id="efdf4dc3-2d50-441c-98f3-6a8773771462" class="" dir="auto">
+</p><h3 id="3a543d8c-d048-80bd-bbba-dda5e2f87970" class="" dir="auto">2) 서비스 이용 과정에서 생성되는 정보</h3><ul id="3a543d8c-d048-80ba-a63f-d578068018a3" class="bulleted-list" dir="auto"><li style="list-style-type:disc">일반 포인트 및 골드 포인트 적립·사용·취소 내역</li></ul><ul id="3a543d8c-d048-800b-ba95-f21d508b9f0f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠폰 구매·발급·사용·환불 내역</li></ul><ul id="3a543d8c-d048-8066-a029-edfb5d88635b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">추첨 및 랜덤박스 참여 내역</li></ul><ul id="3a543d8c-d048-808e-9487-c8fe8db362ee" class="bulleted-list" dir="auto"><li style="list-style-type:disc">출석, 퀴즈, 룰렛, 경제교육 콘텐츠 이용 기록</li></ul><ul id="3a543d8c-d048-80ed-856f-f7d6852d0bef" class="bulleted-list" dir="auto"><li style="list-style-type:disc">오답 및 학습 진행 기록</li></ul><ul id="3a543d8c-d048-8044-a877-c608d39c0e3c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">제휴 쇼핑 클릭 및 실적 정보</li></ul><ul id="3a543d8c-d048-80bd-86d2-f795c865372b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">제휴 주문 식별값, 제휴처, 상품 또는 서비스 정보</li></ul><ul id="3a543d8c-d048-808c-8a37-e4e89720a481" class="bulleted-list" dir="auto"><li style="list-style-type:disc">적립 예정일, 적립 상태 및 적립 포인트</li></ul><ul id="3a543d8c-d048-80d0-a0f8-c83ffa1ece02" class="bulleted-list" dir="auto"><li style="list-style-type:disc">고객문의 내용과 답변 내역</li></ul><ul id="3a543d8c-d048-80ab-bfab-cc8bf361cc6a" class="bulleted-list" dir="auto"><li style="list-style-type:disc">서비스 이용 제한 및 부정 이용 관련 기록</li></ul><p id="dd27243b-3eeb-4c85-9174-95782000614c" class="" dir="auto">
+</p><h3 id="3a543d8c-d048-80dd-a411-f8758cbc4c43" class="" dir="auto">3) 자동으로 생성되거나 수집될 수 있는 정보</h3><ul id="3a543d8c-d048-8047-bb39-d521630abce1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">접속 일시</li></ul><ul id="3a543d8c-d048-80b5-8f70-e35d42ee2577" class="bulleted-list" dir="auto"><li style="list-style-type:disc">IP 주소</li></ul><ul id="3a543d8c-d048-8054-a82d-df4d0e78e670" class="bulleted-list" dir="auto"><li style="list-style-type:disc">앱 버전</li></ul><ul id="3a543d8c-d048-80f5-ab9d-c857be9410ca" class="bulleted-list" dir="auto"><li style="list-style-type:disc">기기 모델 및 운영체제 정보</li></ul><ul id="3a543d8c-d048-8097-9443-c71ecbd17b36" class="bulleted-list" dir="auto"><li style="list-style-type:disc">접속 로그 및 서비스 이용 기록</li></ul><ul id="3a543d8c-d048-80d5-aba4-d7e33d842d0c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">오류·충돌·장애 기록</li></ul><ul id="3a543d8c-d048-8072-9fc2-d3454e2a255f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">광고 식별자</li></ul><ul id="3a543d8c-d048-8048-a717-c942807d9392" class="bulleted-list" dir="auto"><li style="list-style-type:disc">푸시 알림 토큰</li></ul><ul id="3a543d8c-d048-8035-abe6-d1fdfd9da5e3" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠키 또는 이와 유사한 온라인 식별정보</li></ul><p id="53573874-acf1-4110-8751-c2d7b12b7e58" class="" dir="auto">
+</p><p id="3a543d8c-d048-80d0-8b73-f99a6223c321" class="" dir="auto">앱 이용 과정에서 생성되는 로그, 구매내역 등의 정보도 개인을 알아볼 수 있거나 다른 정보와 결합될 경우 개인정보에 해당할 수 있습니다.</p><p id="331d0042-c11b-4b29-9ddb-2d6b59ba96d6" class="" dir="auto">
+</p><h3 id="3a543d8c-d048-80b3-a981-d2a30015977a" class="" dir="auto">4) 회사가 수집하지 않는 정보</h3><p id="3a543d8c-d048-8061-ad28-c6426c3ea264" class="" dir="auto">회사는 현재 포인트의 현금 출금 서비스를 제공하지 않으며, 출금을 위한 계좌번호, 은행명 및 예금주 정보를 수집하지 않습니다.</p><p id="3a543d8c-d048-8086-bc15-d363a8d6b680" class="" dir="auto">회사는 서비스 제공에 필요하지 않은 주민등록번호 등 고유식별정보를 원칙적으로 수집하지 않습니다.</p><hr id="3a543d8c-d048-803a-a988-c83c35512862" dir="auto"/><h2 id="3a543d8c-d048-80e6-9bbd-f5f7743bf3f1" class="" dir="auto">3. 개인정보의 수집 방법</h2><p id="3a543d8c-d048-8056-87e2-ebd0dc49bd60" class="" dir="auto">회사는 다음 방법으로 개인정보를 수집합니다.</p><ul id="3a543d8c-d048-800e-8a59-caae7803e7c1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">회원가입 및 로그인 과정에서 이용자가 직접 입력</li></ul><ul id="3a543d8c-d048-808d-b84b-cc3f5689713b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">서비스 이용 과정에서 자동 생성</li></ul><ul id="3a543d8c-d048-80db-b56b-c77be3fc590a" class="bulleted-list" dir="auto"><li style="list-style-type:disc">고객지원 이메일 또는 앱 내 문의를 통한 접수</li></ul><ul id="3a543d8c-d048-804a-bb8e-f77300d8d109" class="bulleted-list" dir="auto"><li style="list-style-type:disc">제휴 쇼핑 사업자 또는 제휴 네트워크로부터 적립 실적 수신</li></ul><ul id="3a543d8c-d048-8025-9b0a-e2eea0b6805c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">광고·분석·오류 관리 서비스 이용 과정에서 자동 생성</li></ul><hr id="3a543d8c-d048-8021-9b90-e9ab1ab8e050" dir="auto"/><h2 id="3a543d8c-d048-80a8-8430-d77ed5421e99" class="" dir="auto">4. 개인정보의 처리 및 보유기간</h2><p id="3a543d8c-d048-80e2-9ae8-e0407cd9008f" class="" dir="auto">회사는 개인정보 처리 목적이 달성되거나 회원이 탈퇴한 경우 해당 개인정보를 지체 없이 파기합니다.</p><p id="3a543d8c-d048-80fd-861d-cd7a6c652054" class="" dir="auto">다만, 관계 법령에 따른 의무 이행, 부정 이용 방지, 분쟁 대응 또는 서비스 정산을 위해 필요한 정보는 아래 기간 동안 별도로 보관할 수 있습니다.</p><table id="3a543d8c-d048-8024-8719-e65031601595" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3a543d8c-d048-80a5-b0bc-c2ad5086b4f8" dir="ltr"><th id="IwmJ" class="simple-table-header-color simple-table-header">구분</th><th id="|&gt;[^" class="simple-table-header-color simple-table-header">보유기간</th></tr></thead><tbody><tr id="3a543d8c-d048-80d3-8b4d-eb6261148dd8" dir="ltr"><td id="IwmJ" class="">회원 계정 및 프로필 정보</td><td id="|&gt;[^" class="">회원 탈퇴 시까지</td></tr><tr id="3a543d8c-d048-8099-9282-db2aaf29202f" dir="ltr"><td id="IwmJ" class="">포인트·골드 잔액 및 이용내역</td><td id="|&gt;[^" class="">회원 탈퇴 시까지. 단, 분쟁·정산 기록은 필요한 기간 동안 별도 보관</td></tr><tr id="3a543d8c-d048-801c-946c-efe8ea0320ce" dir="ltr"><td id="IwmJ" class="">쿠폰 구매·발급·환불 내역</td><td id="|&gt;[^" class="">관련 법령에서 정한 기간</td></tr><tr id="3a543d8c-d048-808e-a708-ee08d74b08d2" dir="ltr"><td id="IwmJ" class="">제휴 쇼핑 적립 및 취소 내역</td><td id="|&gt;[^" class="">적립·취소·분쟁 처리가 완료될 때까지</td></tr><tr id="3a543d8c-d048-80ec-9eaf-f62e66f2bac5" dir="ltr"><td id="IwmJ" class="">고객문의 및 분쟁 처리 기록</td><td id="|&gt;[^" class="">처리 완료 후 3년</td></tr><tr id="3a543d8c-d048-80f3-bebc-dbcc89ab1fe1" dir="ltr"><td id="IwmJ" class="">부정 이용 방지용 식별정보</td><td id="|&gt;[^" class="">회원 탈퇴 후 30일</td></tr><tr id="3a543d8c-d048-8097-a696-dc3e1fbfe37a" dir="ltr"><td id="IwmJ" class="">계약 또는 청약철회 등에 관한 기록</td><td id="|&gt;[^" class="">5년</td></tr><tr id="3a543d8c-d048-800e-8329-d7ef3b3153da" dir="ltr"><td id="IwmJ" class="">대금결제 및 재화 등의 공급에 관한 기록</td><td id="|&gt;[^" class="">5년</td></tr><tr id="3a543d8c-d048-804a-8a69-e5d3eb0ef294" dir="ltr"><td id="IwmJ" class="">소비자 불만 또는 분쟁 처리에 관한 기록</td><td id="|&gt;[^" class="">3년</td></tr><tr id="3a543d8c-d048-80f8-9378-f4952c6eb380" dir="ltr"><td id="IwmJ" class="">접속기록 및 보안 로그</td><td id="|&gt;[^" class="">수집 목적 달성 또는 관계 법령에서 정한 기간까지</td></tr></tbody></table><p id="ef6bb08d-4125-4491-897f-3778de88ca73" class="" dir="auto">
+</p><p id="3a543d8c-d048-8024-935b-f9976a1b5480" class="" dir="auto">관계 법령에 따라 보존하는 개인정보는 다른 개인정보와 분리하여 보관하고, 보존기간이 끝나면 안전하게 파기합니다.</p><hr id="3a543d8c-d048-8010-bf9c-e28ea58ec5cb" dir="auto"/><h2 id="3a543d8c-d048-8073-942b-f4cf194199bb" class="" dir="auto">5. 개인정보의 제3자 제공</h2><p id="3a543d8c-d048-8043-821b-f64088547323" class="" dir="auto">회사는 이용자의 개인정보를 원칙적으로 제3자에게 제공하지 않습니다.</p><p id="3a543d8c-d048-8025-8f40-c670b905a191" class="" dir="auto">다만, 다음에 해당하는 경우에는 예외로 합니다.</p><ul id="3a543d8c-d048-8017-b679-c68b7eb57587" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이용자가 사전에 제공에 동의한 경우</li></ul><ul id="3a543d8c-d048-80a8-a124-c1f523f868fa" class="bulleted-list" dir="auto"><li style="list-style-type:disc">법률에 특별한 규정이 있거나 법령상 의무를 준수하기 위해 필요한 경우</li></ul><ul id="3a543d8c-d048-8018-942e-c10e40cf8d12" class="bulleted-list" dir="auto"><li style="list-style-type:disc">수사기관 등이 적법한 절차와 방법에 따라 요청한 경우</li></ul><p id="4e495b5e-a584-45ef-babc-2803bef4ec0d" class="" dir="auto">
+</p><p id="3a543d8c-d048-802e-9215-da9c4e73009f" class="" dir="auto">제휴 포인트 적립을 위해 개인정보 제공이 필요한 경우 회사는 제공받는 자, 제공 목적, 제공 항목 및 보유기간을 사전에 알리고 필요한 동의를 받습니다.</p><p id="3a543d8c-d048-808f-9930-dddfb646dde0" class="" dir="auto">단순히 이용자가 제휴 링크를 선택하여 외부 쇼핑몰로 이동하는 경우, 이동한 서비스에서는 해당 서비스 사업자의 개인정보처리방침이 적용됩니다.</p><hr id="3a543d8c-d048-8058-9763-e051abd88e35" dir="auto"/><h2 id="3a543d8c-d048-8080-987a-e3cebf9c7338" class="" dir="auto">6. 개인정보 처리업무의 위탁</h2><p id="3a543d8c-d048-803c-84d5-d4a59accf31d" class="" dir="auto">회사는 원활한 서비스 제공을 위해 개인정보 처리업무의 일부를 외부 사업자에게 위탁할 수 있습니다.</p><table id="3a543d8c-d048-8076-89cd-e3273e6553c8" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3a543d8c-d048-80cf-900a-dda760f3ad6f" dir="ltr"><th id="AOj&lt;" class="simple-table-header-color simple-table-header">수탁자</th><th id="KlIL" class="simple-table-header-color simple-table-header">위탁 업무</th></tr></thead><tbody><tr id="3a543d8c-d048-80c2-83a8-fc1f97a1fc9b" dir="ltr"><td id="AOj&lt;" class="">Supabase, Inc.</td><td id="KlIL" class="">회원 인증, 데이터베이스 운영, 서비스 데이터 저장 및 처리</td></tr><tr id="3a543d8c-d048-804b-9940-e7b3a746d37a" dir="ltr"><td id="AOj&lt;" class="">Google LLC</td><td id="KlIL" class="">앱 배포, 광고 제공, 광고 성과 측정 및 관련 서비스 운영</td></tr><tr id="3a543d8c-d048-801d-839c-c40298d4b9e8" dir="ltr"><td id="AOj&lt;" class="">링크프라이스, 애드픽, TNK</td><td id="KlIL" class="">제휴 링크 운영, 구매 실적 확인, 적립 및 취소 확인</td></tr><tr id="3a543d8c-d048-80cb-bfb0-ef2582e874d2" dir="ltr"><td id="AOj&lt;" class="">KT기프티쇼비즈</td><td id="KlIL" class="">쿠폰 발급, 발송, 사용 및 취소 처리</td></tr></tbody></table><p id="f80c4864-ee71-4f35-bdf1-aff381920aed" class="" dir="auto">
+</p><p id="3a543d8c-d048-80e0-97c7-d1de12474215" class="" dir="auto">회사는 위탁계약 또는 이에 준하는 절차를 통해 위탁 목적 외 개인정보 처리 금지, 접근 통제, 안전성 확보조치, 재위탁 제한 및 관리·감독에 관한 사항을 정하고 있습니다.</p><p id="3a543d8c-d048-805b-879d-df4573fc7b27" class="" dir="auto">개인정보 처리업무를 위탁하는 경우 위탁 업무 내용과 수탁자를 홈페이지 등에 지속적으로 공개해야 합니다.</p><p id="6ca0926e-9b53-471e-a534-d52047bc5bb2" class="" dir="auto">
+</p><hr id="3a543d8c-d048-8024-8de9-e66d3ae90cec" dir="auto"/><h2 id="3a543d8c-d048-8013-9e8d-dcc9b1c555fe" class="" dir="auto">7. 개인정보의 국외 이전</h2><p id="3a543d8c-d048-801a-9a76-d1c967f4678c" class="" dir="auto">회사는 해외 클라우드·광고·분석 서비스를 이용하는 과정에서 개인정보가 국외에서 처리될 수 있습니다.</p><p id="3a543d8c-d048-8057-a34d-e28cc0ae4dc9" class="" dir="auto">국외 이전이 발생하는 경우 회사는 관계 법령에 따라 다음 사항을 개인정보처리방침 또는 별도의 동의 화면을 통해 안내합니다.</p><ul id="3a543d8c-d048-8041-9e97-ced8740dc62f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이전받는 자</li></ul><ul id="3a543d8c-d048-80ec-b198-ec3d46536b80" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이전되는 국가</li></ul><ul id="3a543d8c-d048-808d-bf47-e79df1733977" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이전되는 개인정보 항목</li></ul><ul id="3a543d8c-d048-8012-aa2a-fbc78ba3b319" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이전 목적</li></ul><ul id="3a543d8c-d048-80cd-af38-d6fa6dd9c8a2" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이전 시기 및 방법</li></ul><ul id="3a543d8c-d048-80bd-b10c-e6fd96d394d4" class="bulleted-list" dir="auto"><li style="list-style-type:disc">보유 및 이용기간</li></ul><ul id="3a543d8c-d048-809a-83c7-f9b7fc3277f7" class="bulleted-list" dir="auto"><li style="list-style-type:disc">국외 이전을 거부하는 방법과 거부 시 발생할 수 있는 사항</li></ul><p id="0ad51530-f238-4091-9a70-d91481304ee5" class="" dir="auto">
+</p><table id="3a543d8c-d048-80a7-bf63-c5ded244eefa" class="simple-table" dir="ltr"><thead class="simple-table-header"><tr id="3a543d8c-d048-8039-91dd-cb932918c2b8" dir="ltr"><th id="^iu~" class="simple-table-header-color simple-table-header">이전받는 자</th><th id="ycqd" class="simple-table-header-color simple-table-header">이전 국가</th><th id="GDzk" class="simple-table-header-color simple-table-header">이전 항목</th><th id="dawL" class="simple-table-header-color simple-table-header">이전 목적</th><th id="q;pp" class="simple-table-header-color simple-table-header">이전 시기·방법</th><th id="_Hur" class="simple-table-header-color simple-table-header">보유기간</th></tr></thead><tbody><tr id="3a543d8c-d048-8006-b971-ea04fcedc74e" dir="ltr"><td id="^iu~" class="">Supabase, Inc.</td><td id="ycqd" class="">미국</td><td id="GDzk" class="">회원정보 및 서비스 이용정보</td><td id="dawL" class="">인증·데이터 저장·서비스 운영</td><td id="q;pp" class="">서비스 이용 시 암호화된 통신망을 통해 전송</td><td id="_Hur" class="">계약 및 서비스 운영 정책에 따른 기간</td></tr><tr id="3a543d8c-d048-8014-abc6-c6d0b81cb4ab" dir="ltr"><td id="^iu~" class="">Google LLC</td><td id="ycqd" class="">미국</td><td id="GDzk" class="">광고 식별자, 기기정보, 광고 이용정보</td><td id="dawL" class="">광고 제공 및 성과 측정</td><td id="q;pp" class="">앱 이용 및 광고 노출 시 전송</td><td id="_Hur" class="">Google 정책에 따른 기간</td></tr></tbody></table><p id="9b143c30-7d6b-47db-8d8b-dbfcf56ae953" class="" dir="auto">
+</p><hr id="3a543d8c-d048-8092-99ff-f5f0775ddfcb" dir="auto"/><h2 id="3a543d8c-d048-80a4-ab57-e2207f247e19" class="" dir="auto">8. 개인정보의 파기 절차 및 방법</h2><p id="3a543d8c-d048-803c-9e3e-dd31eec35a37" class="" dir="auto">회사는 개인정보의 보유기간이 지나거나 처리 목적이 달성된 경우 해당 개인정보를 지체 없이 파기합니다.</p><p id="ca73c5f4-3bea-44be-a9e2-3c2662f2356a" class="" dir="auto">
+</p><h3 id="3a543d8c-d048-8078-9a98-ddb04fb27df2" class="" dir="auto">1) 파기 절차</h3><ul id="3a543d8c-d048-807d-8cf4-dde8b6b2d32d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">처리 목적이 달성된 개인정보를 확인합니다.</li></ul><ul id="3a543d8c-d048-8049-995e-ee5e22ee7fb2" class="bulleted-list" dir="auto"><li style="list-style-type:disc">관계 법령에 따라 보존해야 하는 정보가 있는 경우 별도의 저장공간에 분리하여 보관합니다.</li></ul><ul id="3a543d8c-d048-8094-a029-f7d5ea6846e9" class="bulleted-list" dir="auto"><li style="list-style-type:disc">보존기간이 끝난 개인정보는 지체 없이 파기합니다.</li></ul><p id="f63022bd-84a8-4188-bc28-f3085f403ba7" class="" dir="auto">
+</p><h3 id="3a543d8c-d048-801b-b251-d4a034d207d3" class="" dir="auto">2) 파기 방법</h3><ul id="3a543d8c-d048-80d3-9287-d46d79edc804" class="bulleted-list" dir="auto"><li style="list-style-type:disc">전자적 파일은 복구 또는 재생할 수 없는 방법으로 삭제합니다.</li></ul><ul id="3a543d8c-d048-8039-823f-e52e7512044d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">출력물 또는 종이 문서는 분쇄하거나 소각하여 파기합니다.</li></ul><ul id="3a543d8c-d048-80d3-bdf2-f9f7f13b90fc" class="bulleted-list" dir="auto"><li style="list-style-type:disc">백업 데이터는 백업 정책에 따라 순차적으로 삭제되며, 삭제 전까지 별도로 사용하지 않습니다.</li></ul><hr id="3a543d8c-d048-8072-8bdd-ceda9994b6d2" dir="auto"/><h2 id="3a543d8c-d048-8081-a631-f64d03d7cb92" class="" dir="auto">9. 이용자와 법정대리인의 권리 및 행사 방법</h2><p id="3a543d8c-d048-8057-8271-e8dd871f8de4" class="" dir="auto">이용자는 언제든지 자신의 개인정보에 대해 다음 권리를 행사할 수 있습니다.</p><ul id="3a543d8c-d048-802c-a2e1-fefc6b62759f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보 열람 요구</li></ul><ul id="3a543d8c-d048-80da-9bdc-e310bfc2ff7e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보 정정 요구</li></ul><ul id="3a543d8c-d048-8053-8798-fd85a5ae2bbf" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보 삭제 요구</li></ul><ul id="3a543d8c-d048-80db-9f2b-fe1c358f0ea4" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보 처리정지 요구</li></ul><ul id="3a543d8c-d048-803c-8015-ec172a37861d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보 수집·이용 동의 철회</li></ul><ul id="3a543d8c-d048-8068-bb85-e49c81bff2d1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">회원 탈퇴 및 계정 삭제 요청</li></ul><p id="903d4e83-f517-487d-b6ab-72ffdb12f4d8" class="" dir="auto">
+</p><p id="3a543d8c-d048-8080-bde9-c8883688ce6e" class="" dir="auto">권리 행사는 앱 내 메뉴 또는 고객지원 이메일을 통해 신청할 수 있습니다.</p><p id="2393b37c-e8a3-4c05-b9ae-4f892499042d" class="" dir="auto">
+</p><h3 id="3a543d8c-d048-8010-ac70-cd4fa862b9ff" class="" dir="auto">앱에서 회원 탈퇴하는 방법</h3><ol type="1" id="3a543d8c-d048-8071-8f14-d4be0ee220fe" class="numbered-list" start="1" dir="auto"><li>골드만짠스 앱 실행</li></ol><ol type="1" id="3a543d8c-d048-807f-9b17-cae451da1398" class="numbered-list" start="2" dir="auto"><li>설정</li></ol><ol type="1" id="3a543d8c-d048-80d5-a470-ea25b18fc0a2" class="numbered-list" start="3" dir="auto"><li>서비스 탈퇴</li></ol><ol type="1" id="3a543d8c-d048-8060-aa1f-eda5a7c11e74" class="numbered-list" start="4" dir="auto"><li>서비스 탈퇴 동의 확인</li></ol><ol type="1" id="3a543d8c-d048-809a-b4b9-dbaaa35640d1" class="numbered-list" start="5" dir="auto"><li>탈퇴 안내 계정 삭제 확인</li></ol><ol type="1" id="3a543d8c-d048-804a-97cf-e7e2fd8186f9" class="numbered-list" start="6" dir="auto"><li>회원 탈퇴 완료</li></ol><p id="b74f9841-bcf5-4bfb-b048-0f390bd79ca2" class="" dir="auto">
+</p><h3 id="3a543d8c-d048-809d-82d8-c619e46a8b21" class="" dir="auto">웹에서 계정 삭제를 요청하는 방법</h3><p id="3a543d8c-d048-80ef-b953-c8ed6a9dfb1a" class="" dir="auto">골드만짠스 공식 서비스 안내 페이지의 <strong>「계정 및 데이터 삭제 요청」</strong> 메뉴에서 안내된 방법에 따라 신청할 수 있습니다.</p><ul id="3a543d8c-d048-80b6-b066-ed919379b60f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이메일: <code>goldman.zzans.official@gmail.com</code></li></ul><ul id="3a543d8c-d048-806c-a51d-d96fb44c63cd" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이메일 제목: 골드만짠스 계정 삭제 요청</li></ul><ul id="3a543d8c-d048-80c5-92c8-fd6e093d4570" class="bulleted-list" dir="auto"><li style="list-style-type:disc">필수 내용: 가입 이메일 주소, 닉네임, 계정 삭제 요청 의사</li></ul><p id="1070487b-ecdc-48f2-a185-d4caf1d037ec" class="" dir="auto">
+</p><p id="3a543d8c-d048-80c3-bf52-d25509c2074f" class="" dir="auto">회사는 요청자가 계정의 실제 이용자인지 확인하기 위해 필요한 범위에서 본인확인 절차를 진행할 수 있습니다.</p><p id="3a543d8c-d048-80c0-ba9f-f68f48eb4867" class="" dir="auto">회원가입 기능이 있는 앱은 앱 내부 삭제 경로와 함께 외부 웹에서도 계정 및 관련 데이터 삭제를 요청할 수 있는 경로를 제공해야 합니다.</p><p id="3a543d8c-d048-80f7-bfbd-d409b207b467" class="" dir="auto">법령에 따라 보관해야 하는 정보가 있는 경우에는 해당 정보와 보관 사유 및 기간을 안내하고 별도로 보관할 수 있습니다.</p><hr id="3a543d8c-d048-80e0-bece-d1549cf76b14" dir="auto"/><h2 id="3a543d8c-d048-80ad-a5d8-edf7b17364ab" class="" dir="auto">10. 회원 탈퇴 시 처리되는 정보</h2><p id="3a543d8c-d048-8065-b6e4-da107317058a" class="" dir="auto">회원 탈퇴가 완료되면 다음 정보가 삭제되거나 이용할 수 없는 상태로 처리됩니다.</p><ul id="3a543d8c-d048-80a0-9901-db66d1735085" class="bulleted-list" dir="auto"><li style="list-style-type:disc">회원 계정</li></ul><ul id="3a543d8c-d048-8082-a481-f4c1eea753fe" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이메일 및 닉네임</li></ul><ul id="3a543d8c-d048-8035-a23c-c115b19445f0" class="bulleted-list" dir="auto"><li style="list-style-type:disc">프로필 정보</li></ul><ul id="3a543d8c-d048-806a-bca1-fb124091201c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">일반 포인트와 골드 포인트 잔액</li></ul><ul id="3a543d8c-d048-8066-bb68-deb3865eab52" class="bulleted-list" dir="auto"><li style="list-style-type:disc">보유 쿠폰</li></ul><ul id="3a543d8c-d048-8078-bd31-c08f4d419571" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인화된 학습 및 서비스 이용정보</li></ul><p id="8f629aec-8a08-4571-ab6c-eb660655ba29" class="" dir="auto">
+</p><p id="3a543d8c-d048-800d-a08e-f4e19a9c0b3a" class="" dir="auto">탈퇴 시 소멸된 포인트, 골드 및 쿠폰은 복구할 수 없습니다.</p><p id="3a543d8c-d048-80aa-883a-ca55bb74e074" class="" dir="auto">다만, 다음 정보는 관계 법령 준수, 정산, 부정 이용 방지 또는 분쟁 처리를 위해 필요한 기간 동안 별도로 보관될 수 있습니다.</p><ul id="3a543d8c-d048-8073-a004-ea372ea6836e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠폰 구매·발급·환불 기록</li></ul><ul id="3a543d8c-d048-8077-ad3b-c7ec5463051a" class="bulleted-list" dir="auto"><li style="list-style-type:disc">제휴 쇼핑 적립·취소 기록</li></ul><ul id="3a543d8c-d048-80a4-be9e-eaeb4ab2b115" class="bulleted-list" dir="auto"><li style="list-style-type:disc">고객문의 및 분쟁 처리 기록</li></ul><ul id="3a543d8c-d048-8085-9aae-f268f35cbf10" class="bulleted-list" dir="auto"><li style="list-style-type:disc">부정 이용 방지를 위한 최소한의 식별정보</li></ul><ul id="3a543d8c-d048-80db-90cf-cfcce582f545" class="bulleted-list" dir="auto"><li style="list-style-type:disc">법령상 보존 의무가 있는 거래 기록</li></ul><p id="f1a80d7d-12fd-49b7-af7a-00bc31ff6c3f" class="" dir="auto">
+</p><p id="3a543d8c-d048-8019-a4a7-d071c3140be7" class="" dir="auto">보존기간이 끝나면 해당 정보는 안전하게 파기됩니다.</p><hr id="3a543d8c-d048-80a0-9a98-e92e53842f65" dir="auto"/><h2 id="3a543d8c-d048-807c-bca3-dbec73ea83dc" class="" dir="auto">11. 개인정보의 안전성 확보조치</h2><p id="3a543d8c-d048-80df-9a11-ebf7661cce28" class="" dir="auto">회사는 개인정보의 안전한 처리를 위해 다음과 같은 조치를 시행합니다.</p><ul id="3a543d8c-d048-804f-b94c-d408808e30aa" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보 접근 권한의 최소화 및 권한 관리</li></ul><ul id="3a543d8c-d048-80b0-8d19-cbd7d3c0a061" class="bulleted-list" dir="auto"><li style="list-style-type:disc">인증정보 및 중요 정보의 안전한 저장</li></ul><ul id="3a543d8c-d048-80f9-9978-d19978c83967" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보 전송 구간 암호화</li></ul><ul id="3a543d8c-d048-806c-88f8-e2aec51aec99" class="bulleted-list" dir="auto"><li style="list-style-type:disc">데이터베이스 접근 통제</li></ul><ul id="3a543d8c-d048-80a8-ac90-cae295a6295c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">접속 및 처리 기록의 보관</li></ul><ul id="3a543d8c-d048-80d2-8323-dc071a881bb8" class="bulleted-list" dir="auto"><li style="list-style-type:disc">비정상 접근 및 부정 이용 점검</li></ul><ul id="3a543d8c-d048-8074-ab68-dfb8c1171f96" class="bulleted-list" dir="auto"><li style="list-style-type:disc">보안 업데이트와 취약점 점검</li></ul><ul id="3a543d8c-d048-80a2-acfa-ce02fba00033" class="bulleted-list" dir="auto"><li style="list-style-type:disc">데이터 백업 및 장애 대응 절차 운영</li></ul><ul id="3a543d8c-d048-80b7-bc33-d658db19243b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보 취급자에 대한 관리·감독</li></ul><hr id="3a543d8c-d048-80f4-ad2b-c6e0449a3900" dir="auto"/><h2 id="3a543d8c-d048-8052-952f-e982490059da" class="" dir="auto">12. 광고 식별자 및 맞춤형 광고</h2><p id="3a543d8c-d048-80b8-98b8-d6c9088fc482" class="" dir="auto">회사는 Google AdMob 등 광고 서비스를 이용할 수 있습니다.</p><p id="3a543d8c-d048-8030-9256-dae61db6ff8b" class="" dir="auto">광고 제공 및 광고 성과 측정을 위해 다음 정보가 처리될 수 있습니다.</p><ul id="3a543d8c-d048-80ff-ba66-da7bbf31ccc8" class="bulleted-list" dir="auto"><li style="list-style-type:disc">광고 식별자</li></ul><ul id="3a543d8c-d048-80fc-ac12-c43fb60f807b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">기기 및 운영체제 정보</li></ul><ul id="3a543d8c-d048-8016-b0de-e6dc7a7b2354" class="bulleted-list" dir="auto"><li style="list-style-type:disc">IP 주소</li></ul><ul id="3a543d8c-d048-802a-b935-e24b0b62d491" class="bulleted-list" dir="auto"><li style="list-style-type:disc">광고 노출·클릭·이용 기록</li></ul><ul id="3a543d8c-d048-80e4-92bc-da55e8cedb1f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">앱 이용 관련 정보</li></ul><p id="f1d27861-031a-4601-9975-70cdb236813a" class="" dir="auto">
+</p><p id="3a543d8c-d048-802f-995b-e2046e80d051" class="" dir="auto">이용자는 모바일 기기의 광고 관련 설정에서 광고 식별자를 재설정하거나 맞춤형 광고 설정을 변경할 수 있습니다.</p><p id="3a543d8c-d048-8077-9d07-dd12b8aacf10" class="" dir="auto">광고 서비스 제공자의 개인정보 처리에는 해당 사업자의 개인정보처리방침이 적용될 수 있습니다.</p><hr id="3a543d8c-d048-80b0-b86b-cef3f5df1351" dir="auto"/><h2 id="3a543d8c-d048-805b-8f59-ceeae5ef7817" class="" dir="auto">13. 아동의 개인정보</h2><p id="3a543d8c-d048-80d4-bbb1-c7f1045be79b" class="" dir="auto">골드만짠스는 원칙적으로 만 14세 미만 아동을 대상으로 회원가입 서비스를 제공하지 않습니다.</p><p id="3a543d8c-d048-8077-8b77-ef917d917943" class="" dir="auto">회사가 만 14세 미만 아동의 개인정보를 처리해야 하는 경우에는 법정대리인의 동의를 받는 등 관계 법령에서 정한 절차를 준수합니다.</p><p id="3a543d8c-d048-807e-9282-da02f7035266" class="" dir="auto">※ 앱 가입연령을 실제로 제한하지 않을 예정이라면 이 조항과 가입 화면을 함께 조정해야 합니다.</p><hr id="3a543d8c-d048-809f-81b1-c4b24fd05e31" dir="auto"/><h2 id="3a543d8c-d048-80cf-96a5-d78c9f2129d3" class="" dir="auto">14. 개인정보 자동 수집 장치의 설치·운영 및 거부</h2><p id="3a543d8c-d048-8044-a0f4-d04a014982aa" class="" dir="auto">회사는 이용자의 서비스 이용 형태를 분석하고 서비스 품질을 개선하기 위해 광고 식별자, 접속 로그 및 이와 유사한 정보를 자동으로 처리할 수 있습니다.</p><p id="a6a43256-d95e-48da-98fb-61a775d0214a" class="" dir="auto">
+</p><p id="3a543d8c-d048-80c9-b63c-c51977373323" class="" dir="auto">이용자는 다음 방법으로 일부 자동 수집을 제한할 수 있습니다.</p><ul id="3a543d8c-d048-80f1-a05f-d25e40d392e1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">모바일 기기의 광고 개인정보 보호 설정 변경</li></ul><ul id="3a543d8c-d048-8038-87ad-e9ff91eab2fc" class="bulleted-list" dir="auto"><li style="list-style-type:disc">광고 식별자 재설정 또는 삭제</li></ul><ul id="3a543d8c-d048-80da-8a2b-e41176c4020d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">앱 알림 권한 해제</li></ul><ul id="3a543d8c-d048-8054-add2-ee829b5615a1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">앱 권한 설정 변경</li></ul><p id="81b50055-94d5-40bb-af82-a92025f7a927" class="" dir="auto">
+</p><p id="3a543d8c-d048-8010-826e-c5ac803c0986" class="" dir="auto">일부 정보의 처리를 제한할 경우 광고 개인화나 일부 부가 기능 이용이 제한될 수 있습니다.</p><hr id="3a543d8c-d048-806e-946c-e14dc0099b4f" dir="auto"/><h2 id="3a543d8c-d048-806f-9b82-f4367775dd4b" class="" dir="auto">15. 개인정보 보호책임자 및 고객지원</h2><p id="3a543d8c-d048-8021-80fe-d5bf734c846c" class="" dir="auto">회사는 개인정보 처리에 관한 업무를 총괄하고, 개인정보 관련 문의와 불만을 처리하기 위해 개인정보 보호책임자를 지정하고 있습니다.</p><p id="4ea90240-6a15-46b5-9b2c-4d14ad5dc0bb" class="" dir="auto">
+</p><ul id="3a543d8c-d048-8018-bfdd-f98d3f9963e5" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>성명:</strong> 진영현</li></ul><ul id="3a543d8c-d048-809a-bb59-d6502dbd7c76" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>직위:</strong> 대표</li></ul><ul id="3a543d8c-d048-80c4-b5b1-d2fd15b677ff" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>운영사:</strong> YH리워즈</li></ul><ul id="3a543d8c-d048-80d9-be32-ec4eff1bd32e" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>서비스명:</strong> 골드만짠스</li></ul><ul id="3a543d8c-d048-8032-ad79-f78c20291ce9" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>이메일:</strong> <code>goldman.zzans.official@gmail.com</code></li></ul><ul id="3a543d8c-d048-8099-86b5-c8f66d7320b9" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>전화번호:</strong> <code>070-8984-7474</code></li></ul><p id="9c0363ec-e16b-425f-a4bb-8a725ced999c" class="" dir="auto">
+</p><p id="3a543d8c-d048-8003-99d8-e1c5781fc0d8" class="" dir="auto">이용자는 서비스 이용 과정에서 발생한 개인정보 관련 문의, 불만 처리, 피해구제, 개인정보 열람·정정·삭제 또는 처리정지 요청을 위 연락처로 문의할 수 있습니다.</p><p id="ee82f6d7-94c4-4935-990e-1e69ffe2487f" class="" dir="auto">
+</p><p id="3a543d8c-d048-80a4-a779-d0e1fab68d9d" class="" dir="auto">개인정보 침해와 관련한 상담은 개인정보침해 신고센터 등 관계기관을 이용할 수 있습니다.</p><ul id="3a543d8c-d048-807d-9dae-ee5e1cb2f89e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보침해 신고·상담: 국번 없이 118</li></ul><ul id="3a543d8c-d048-801b-a099-e7318cce3f79" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보분쟁조정위원회: 1833-6972</li></ul><p id="3a543d8c-d048-80e8-b17f-c64150de5caf" class="" dir="auto">개인정보 포털은 개인정보 침해 신고, 분쟁조정 및 관련 상담 창구를 안내하고 있습니다.</p><hr id="3a543d8c-d048-80ba-8212-fe53351237c7" dir="auto"/><h2 id="3a543d8c-d048-80a5-a2e5-ca207e485d26" class="" dir="auto">16. 개인정보처리방침의 변경</h2><p id="3a543d8c-d048-8049-913d-fa1d267210d8" class="" dir="auto">회사는 관계 법령, 서비스 내용 또는 개인정보 처리 방식이 변경되는 경우 개인정보처리방침을 변경할 수 있습니다.</p><p id="3a543d8c-d048-805e-98cf-f2ee19a2f179" class="" dir="auto">개인정보처리방침이 변경되는 경우 변경 내용과 시행일을 골드만짠스 앱 내 공지사항 또는 공식 서비스 안내 페이지를 통해 공개합니다.</p><p id="3a543d8c-d048-8072-9ff1-f00c31c0749c" class="" dir="auto">중요한 변경이 있는 경우에는 이용자가 변경 내용을 명확하게 확인할 수 있도록 별도로 안내합니다.</p><p id="395f6979-2fc1-431f-8a7f-fb4e58199e34" class="" dir="auto">
+</p><ul id="3a543d8c-d048-80ce-bb2b-fc2f8cb21ba4" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>공고일:</strong> 2026년 8월 1일</li></ul><ul id="3a543d8c-d048-8014-b62a-cdb1fa9342c4" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>시행일:</strong> 2026년 8월 1일</li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

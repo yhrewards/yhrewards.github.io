@@ -1,0 +1,767 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>골드만짠스 고객지원 안내</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure,
+aside,
+details {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style></head><body><article id="3a543d8c-d048-8059-ad49-e5ff72394095" class="page sans"><header><h1 class="page-title" dir="auto">골드만짠스 고객지원 안내</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><p id="3a543d8c-d048-802c-bfd8-d42cec6cb0ce" class="" dir="auto">골드만짠스 서비스 이용 중 문의사항이나 오류가 발생한 경우 아래 고객지원 채널을 통해 문의해 주세요.</p><p id="3a543d8c-d048-80a4-bbc9-c6c9c46c9b70" class="" dir="auto">회사는 접수된 문의를 확인한 후 가능한 범위에서 신속하게 답변드리겠습니다.</p><h2 id="3a543d8c-d048-808b-b418-fd57354d8381" class="" dir="auto">1. 고객지원 연락처</h2><ul id="3a543d8c-d048-8015-b117-fdce2088d277" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>운영사:</strong> YH리워즈</li></ul><ul id="3a543d8c-d048-803d-85d5-fca6ea05b6ff" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>서비스명:</strong> 골드만짠스</li></ul><ul id="3a543d8c-d048-8013-8cc2-d30a338a91a4" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>대표자:</strong> 진영현</li></ul><ul id="3a543d8c-d048-8085-9c11-c5aeafe9fde5" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>고객지원 이메일:</strong> <code>goldman.zzans.official@gmail.com</code></li></ul><h2 id="3a543d8c-d048-80f4-89b4-c73ac827001f" class="" dir="auto">2. 고객지원 운영시간</h2><ul id="3a543d8c-d048-80aa-aed8-fd58a644aaa3" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>문의 접수:</strong> 이메일로 상시 가능</li></ul><ul id="3a543d8c-d048-805b-a87f-ec4e97925b2a" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>문의 확인 및 답변:</strong> 평일 오전 10시부터 오후 5시까지</li></ul><ul id="3a543d8c-d048-80aa-bfc9-e81bb181b16f" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>휴무일:</strong> 토요일, 일요일 및 공휴일</li></ul><p id="3a543d8c-d048-8019-99f0-d73d5aa1c07b" class="" dir="auto">운영시간 외 접수된 문의는 다음 영업일부터 순차적으로 확인합니다.</p><h2 id="3a543d8c-d048-80b9-8d86-e76dd2c6167f" class="" dir="auto">3. 문의 방법</h2><p id="3a543d8c-d048-8093-9e7c-e69d98ea64ed" class="" dir="auto">이메일 문의 시 제목에 문의 유형을 적어 주세요.</p><h3 id="3a543d8c-d048-80f3-a2de-c0cad23cd568" class="" dir="auto">문의 제목 예시</h3><ul id="3a543d8c-d048-8028-82b3-da9a6ead3444" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><code>[회원가입] 인증 이메일이 오지 않습니다</code></li></ul><ul id="3a543d8c-d048-8009-881f-dcc63950e9e9" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><code>[포인트] 포인트가 정상적으로 적립되지 않았습니다</code></li></ul><ul id="3a543d8c-d048-8057-86f0-c37ca7aee617" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><code>[쿠폰] 쿠폰 발급에 실패했습니다</code></li></ul><ul id="3a543d8c-d048-80f5-9914-e2689e559904" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><code>[제휴 쇼핑] 구매 실적이 확인되지 않습니다</code></li></ul><ul id="3a543d8c-d048-808b-b526-c1f9fcd4bdc7" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><code>[계정 삭제] 계정 및 데이터 삭제 요청</code></li></ul><ul id="3a543d8c-d048-8075-9aa5-d65c44b17795" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><code>[오류 신고] 앱 실행 중 오류가 발생했습니다</code></li></ul><p id="3a543d8c-d048-80d3-b568-c9f3679ec683" class="" dir="auto">문의 내용에는 다음 정보를 함께 작성해 주세요.</p><ul id="3a543d8c-d048-8088-8884-dcc4ecba351c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">가입 이메일 주소</li></ul><ul id="3a543d8c-d048-80bb-bd11-eb94b6e971c9" class="bulleted-list" dir="auto"><li style="list-style-type:disc">닉네임</li></ul><ul id="3a543d8c-d048-801f-8102-fd7c203ba4d9" class="bulleted-list" dir="auto"><li style="list-style-type:disc">문의가 발생한 날짜와 시간</li></ul><ul id="3a543d8c-d048-805b-9a87-cb6adb529b79" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이용한 메뉴 또는 기능</li></ul><ul id="3a543d8c-d048-8074-b52b-f2e76d71d8a5" class="bulleted-list" dir="auto"><li style="list-style-type:disc">오류 문구</li></ul><ul id="3a543d8c-d048-802f-8342-e59afadf856c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">문제 상황에 대한 설명</li></ul><ul id="3a543d8c-d048-800a-bc15-dc180d079290" class="bulleted-list" dir="auto"><li style="list-style-type:disc">필요한 경우 오류 화면 캡처</li></ul><ul id="3a543d8c-d048-8085-88f5-e08de2e19dde" class="bulleted-list" dir="auto"><li style="list-style-type:disc">제휴 쇼핑 문의 시 주문일자, 제휴처 및 주문 식별정보</li></ul><p id="3a543d8c-d048-80da-9d4a-c6304b199327" class="" dir="auto">비밀번호, 인증번호, 전체 카드번호, 계좌 비밀번호, 주민등록번호 등 민감한 정보는 이메일에 작성하지 마세요.</p><h2 id="3a543d8c-d048-805b-899b-c0606bddd895" class="" dir="auto">4. 문의 유형별 안내</h2><h3 id="3a543d8c-d048-802a-8df9-e0b0dea2ddad" class="" dir="auto">회원가입 및 로그인</h3><p id="3a543d8c-d048-80b7-9691-d07ee4009dbb" class="" dir="auto">다음 문제에 대해 문의할 수 있습니다.</p><ul id="3a543d8c-d048-80dd-8d85-db9e9a7798b4" class="bulleted-list" dir="auto"><li style="list-style-type:disc">회원가입 오류</li></ul><ul id="3a543d8c-d048-8071-8890-c4b55898b4c7" class="bulleted-list" dir="auto"><li style="list-style-type:disc">로그인 실패</li></ul><ul id="3a543d8c-d048-8036-a4d7-de4ecad13d36" class="bulleted-list" dir="auto"><li style="list-style-type:disc">인증 이메일 미수신</li></ul><ul id="3a543d8c-d048-8037-8a96-c279e9069467" class="bulleted-list" dir="auto"><li style="list-style-type:disc">계정 접근 불가</li></ul><ul id="3a543d8c-d048-80f8-8508-fab4394f9f41" class="bulleted-list" dir="auto"><li style="list-style-type:disc">중복가입 또는 재가입 제한</li></ul><ul id="3a543d8c-d048-806e-b6ea-d05709cecfd3" class="bulleted-list" dir="auto"><li style="list-style-type:disc">회원정보 수정</li></ul><h3 id="3a543d8c-d048-808c-92e0-dea04a8c4511" class="" dir="auto">포인트 및 골드</h3><p id="3a543d8c-d048-80ae-aa37-da112e5aa9cf" class="" dir="auto">다음 문제에 대해 문의할 수 있습니다.</p><ul id="3a543d8c-d048-8035-b18f-de1fbc67b9bc" class="bulleted-list" dir="auto"><li style="list-style-type:disc">일반 포인트 적립 누락</li></ul><ul id="3a543d8c-d048-8041-a072-ebfd9f97e786" class="bulleted-list" dir="auto"><li style="list-style-type:disc">골드 포인트 적립 누락</li></ul><ul id="3a543d8c-d048-803b-ba5e-c536c38e62bc" class="bulleted-list" dir="auto"><li style="list-style-type:disc">포인트 차감 오류</li></ul><ul id="3a543d8c-d048-800a-891e-dbff3d0294bc" class="bulleted-list" dir="auto"><li style="list-style-type:disc">중복 적립 또는 중복 차감</li></ul><ul id="3a543d8c-d048-8030-b942-e036a2979998" class="bulleted-list" dir="auto"><li style="list-style-type:disc">포인트 회수 또는 취소 사유</li></ul><ul id="3a543d8c-d048-8038-91a3-c8e53b47596a" class="bulleted-list" dir="auto"><li style="list-style-type:disc">포인트 잔액 불일치</li></ul><p id="3a543d8c-d048-80d8-b7df-df25afb2d0fc" class="" dir="auto">문의 시 적립 또는 사용한 기능과 발생 시간을 함께 알려 주세요.</p><h3 id="3a543d8c-d048-8081-864e-e4e62114b376" class="" dir="auto">모바일 쿠폰</h3><p id="3a543d8c-d048-801a-9e3c-fbd618bfd59a" class="" dir="auto">다음 문제에 대해 문의할 수 있습니다.</p><ul id="3a543d8c-d048-80a4-b16f-d458b138e35a" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠폰 구매 실패</li></ul><ul id="3a543d8c-d048-808c-9481-d4e65a7fd563" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠폰 발급 지연</li></ul><ul id="3a543d8c-d048-8056-82a3-d11c9e76783d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠폰 발급 실패 후 포인트 환불 미처리</li></ul><ul id="3a543d8c-d048-8067-84ec-e65423630d89" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠폰 확인 불가</li></ul><ul id="3a543d8c-d048-8062-8123-eff9ea3ebe54" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠폰 사용 관련 문의</li></ul><ul id="3a543d8c-d048-8058-91c5-f75bbf80bc29" class="bulleted-list" dir="auto"><li style="list-style-type:disc">잘못된 쿠폰 발급 또는 상품 불일치</li></ul><p id="3a543d8c-d048-802f-a06c-fa6e28e7448b" class="" dir="auto">쿠폰 발급 실패가 확인된 경우 시스템 정책에 따라 차감된 포인트가 자동 환불될 수 있습니다.</p><h3 id="3a543d8c-d048-802d-8c8d-e3eccc1972ea" class="" dir="auto">추첨 및 랜덤박스</h3><p id="3a543d8c-d048-805a-b862-cfb38fae118e" class="" dir="auto">다음 문제에 대해 문의할 수 있습니다.</p><ul id="3a543d8c-d048-8020-9f33-efbd98ec15e5" class="bulleted-list" dir="auto"><li style="list-style-type:disc">참여 포인트 차감 후 결과 미표시</li></ul><ul id="3a543d8c-d048-80b0-9f5f-f0750bf42bcb" class="bulleted-list" dir="auto"><li style="list-style-type:disc">추첨 결과 오류</li></ul><ul id="3a543d8c-d048-8000-be93-e1336ba3b1e1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">당첨 쿠폰 발급 실패</li></ul><ul id="3a543d8c-d048-8077-88cb-f9e7b1c07087" class="bulleted-list" dir="auto"><li style="list-style-type:disc">참여 내역 확인</li></ul><ul id="3a543d8c-d048-80aa-b4b4-cb173270f641" class="bulleted-list" dir="auto"><li style="list-style-type:disc">당첨 상품 관련 문의</li></ul><p id="3a543d8c-d048-8011-a364-d02833b4752d" class="" dir="auto">정상적으로 결과가 생성된 추첨 또는 랜덤박스는 단순 변심으로 취소하거나 사용한 포인트를 환불하기 어렵습니다.</p><h3 id="3a543d8c-d048-8012-89b5-ce796c620c40" class="" dir="auto">제휴 쇼핑</h3><p id="3a543d8c-d048-8096-a37c-d9f7bb44446c" class="" dir="auto">다음 문제에 대해 문의할 수 있습니다.</p><ul id="3a543d8c-d048-805c-a831-e3b2a6dacb1f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">구매 실적 미확인</li></ul><ul id="3a543d8c-d048-800c-b206-e63883cdac30" class="bulleted-list" dir="auto"><li style="list-style-type:disc">적립 예정일 문의</li></ul><ul id="3a543d8c-d048-8041-856d-fb45e51c2605" class="bulleted-list" dir="auto"><li style="list-style-type:disc">적립 포인트 불일치</li></ul><ul id="3a543d8c-d048-80fe-9634-c362e686ae01" class="bulleted-list" dir="auto"><li style="list-style-type:disc">주문 취소 또는 반품에 따른 적립 취소</li></ul><ul id="3a543d8c-d048-80d6-b054-df961210b24d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">제휴사 승인 지연</li></ul><ul id="3a543d8c-d048-8014-85b4-e68dacd9bc70" class="bulleted-list" dir="auto"><li style="list-style-type:disc">적립 누락 문의</li></ul><p id="3a543d8c-d048-8069-8506-e1f29fd3a006" class="" dir="auto">제휴 쇼핑 문의 시 다음 정보를 제공해 주세요.</p><ul id="3a543d8c-d048-809c-a9ca-deaeba4ada46" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이용한 제휴 쇼핑몰</li></ul><ul id="3a543d8c-d048-8022-9efb-d5901114a7fd" class="bulleted-list" dir="auto"><li style="list-style-type:disc">주문일자와 주문시간</li></ul><ul id="3a543d8c-d048-808c-a930-fea2d41ca764" class="bulleted-list" dir="auto"><li style="list-style-type:disc">주문번호 또는 주문 식별정보</li></ul><ul id="3a543d8c-d048-8006-bfbc-eef4fe3192b3" class="bulleted-list" dir="auto"><li style="list-style-type:disc">구매 상품 또는 서비스</li></ul><ul id="3a543d8c-d048-80d0-8934-f1af207ac1ac" class="bulleted-list" dir="auto"><li style="list-style-type:disc">결제금액</li></ul><ul id="3a543d8c-d048-80a2-8ba8-c432630ce4ea" class="bulleted-list" dir="auto"><li style="list-style-type:disc">적립내역 화면 캡처</li></ul><p id="3a543d8c-d048-8022-ad8d-d328d959ff5c" class="" dir="auto">주문번호, 상품명 및 구매정보는 문의 확인 목적으로만 사용합니다. 카드번호나 결제 비밀번호는 보내지 마세요.</p><p id="3a543d8c-d048-80cc-9ce8-f1a00073762e" class="" dir="auto">제휴 실적은 쇼핑몰 및 제휴사의 승인 절차에 따라 반영되므로, 구매 직후 즉시 확인되지 않을 수 있습니다.</p><h3 id="3a543d8c-d048-80db-9a86-cbc0dd531452" class="" dir="auto">계정 및 개인정보</h3><p id="3a543d8c-d048-803f-82ca-cf85f98fc6d9" class="" dir="auto">다음 요청은 고객지원 이메일로 접수할 수 있습니다.</p><ul id="3a543d8c-d048-8070-8e1f-c83736e11653" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보 열람</li></ul><ul id="3a543d8c-d048-8061-a03a-c9a7c2ea53b2" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보 정정</li></ul><ul id="3a543d8c-d048-804c-9538-d79903fcdb13" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보 삭제</li></ul><ul id="3a543d8c-d048-804e-b5b3-e01f8aef98a6" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보 처리정지</li></ul><ul id="3a543d8c-d048-8084-9bfe-ca7e0bf2d0d1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">회원 탈퇴</li></ul><ul id="3a543d8c-d048-808f-93e3-c5b14a1181b7" class="bulleted-list" dir="auto"><li style="list-style-type:disc">계정 및 데이터 삭제</li></ul><ul id="3a543d8c-d048-80a0-bb1b-ff5787b8e69c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보 처리 관련 문의</li></ul><p id="3a543d8c-d048-8083-b147-da97f0d7e21e" class="" dir="auto">계정 삭제에 관한 자세한 내용은 공식 서비스 안내 페이지의 <strong>「계정 및 데이터 삭제 요청」</strong> 페이지를 확인해 주세요.</p><h2 id="3a543d8c-d048-80d5-a632-dd2529dc0632" class="" dir="auto">5. 오류 신고 방법</h2><p id="3a543d8c-d048-80e7-a7c1-ddc29c56165d" class="" dir="auto">앱 오류를 신고할 때는 다음 내용을 포함해 주세요.</p><ul id="3a543d8c-d048-8065-a733-d47f165d43f2" class="bulleted-list" dir="auto"><li style="list-style-type:disc">발생 날짜와 시간</li></ul><ul id="3a543d8c-d048-80a9-ae6a-eeb0769d5746" class="bulleted-list" dir="auto"><li style="list-style-type:disc">사용 중이던 화면</li></ul><ul id="3a543d8c-d048-80ac-ab5d-c1bd302edab4" class="bulleted-list" dir="auto"><li style="list-style-type:disc">오류 발생 직전 수행한 동작</li></ul><ul id="3a543d8c-d048-80e0-aeae-c3d49e1544ea" class="bulleted-list" dir="auto"><li style="list-style-type:disc">오류 문구</li></ul><ul id="3a543d8c-d048-803b-afc6-fa66cd3bab42" class="bulleted-list" dir="auto"><li style="list-style-type:disc">반복 발생 여부</li></ul><ul id="3a543d8c-d048-80d2-acad-f27c6fc62b58" class="bulleted-list" dir="auto"><li style="list-style-type:disc">기기 모델명</li></ul><ul id="3a543d8c-d048-8088-8ed3-d1e2364d0d11" class="bulleted-list" dir="auto"><li style="list-style-type:disc">운영체제 버전</li></ul><ul id="3a543d8c-d048-806a-962f-fc6c12076bfc" class="bulleted-list" dir="auto"><li style="list-style-type:disc">골드만짠스 앱 버전</li></ul><ul id="3a543d8c-d048-80ba-9e3e-dcabe85b86f4" class="bulleted-list" dir="auto"><li style="list-style-type:disc">화면 캡처 또는 화면 녹화</li></ul><p id="3a543d8c-d048-8019-b4ed-dcf231ee658d" class="" dir="auto">개인정보나 쿠폰 번호 등 민감한 정보가 화면에 표시된 경우 가린 후 보내 주세요.</p><h2 id="3a543d8c-d048-80f6-9167-cbee1d1a1db0" class="" dir="auto">6. 문의 처리 절차</h2><p id="3a543d8c-d048-8076-8494-ce34f587823d" class="" dir="auto">문의는 다음 절차에 따라 처리됩니다.</p><ol type="1" id="3a543d8c-d048-80c9-a028-e811ed4ea801" class="numbered-list" start="1" dir="auto"><li>문의 접수</li></ol><ol type="1" id="3a543d8c-d048-80f0-bf55-d4d12c5f9189" class="numbered-list" start="2" dir="auto"><li>계정 및 이용내역 확인</li></ol><ol type="1" id="3a543d8c-d048-80cf-b69e-c37c7f7e7f69" class="numbered-list" start="3" dir="auto"><li>필요한 경우 추가 정보 요청</li></ol><ol type="1" id="3a543d8c-d048-80d1-8777-f161ba1cb854" class="numbered-list" start="4" dir="auto"><li>서비스 로그 또는 제휴 실적 확인</li></ol><ol type="1" id="3a543d8c-d048-801a-94de-dda472448a33" class="numbered-list" start="5" dir="auto"><li>처리 결과 안내</li></ol><p id="3a543d8c-d048-80a4-a007-d099b40318b1" class="" dir="auto">문의 내용에 따라 쿠폰 공급사, 제휴 마케팅 사업자 또는 관련 서비스 제공자에게 사실 확인이 필요할 수 있습니다.</p><p id="3a543d8c-d048-804b-b785-dcf96f0cafe6" class="" dir="auto">외부 사업자의 확인이 필요한 문의는 답변에 시간이 더 소요될 수 있습니다.</p><h2 id="3a543d8c-d048-8062-915f-c6bdcdefff55" class="" dir="auto">7. 예상 처리기간</h2><ul id="3a543d8c-d048-8074-858b-ffbeb4ba54a1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">일반 이용문의: 영업일 기준 1~3일</li></ul><ul id="3a543d8c-d048-80c7-822a-cf6d52a6dcd4" class="bulleted-list" dir="auto"><li style="list-style-type:disc">포인트 및 쿠폰 오류: 영업일 기준 1~5일</li></ul><ul id="3a543d8c-d048-80cf-a9ab-f9995ac55eb4" class="bulleted-list" dir="auto"><li style="list-style-type:disc">제휴 쇼핑 실적 문의: 제휴사 확인기간에 따라 달라질 수 있음</li></ul><ul id="3a543d8c-d048-80f5-b26e-d4c3a83363d0" class="bulleted-list" dir="auto"><li style="list-style-type:disc">계정 및 개인정보 요청: 본인 확인 후 관계 법령과 회사 처리 절차에 따라 진행</li></ul><p id="3a543d8c-d048-8080-b3cd-f2c6727367b9" class="" dir="auto">문의량, 장애 상황 또는 제휴사의 확인 지연에 따라 처리기간이 늘어날 수 있습니다.</p><p id="3a543d8c-d048-8035-8e91-de105b651cad" class="" dir="auto">정확한 처리일을 보장하기 어려운 경우 진행 상황을 별도로 안내할 수 있습니다.</p><h2 id="3a543d8c-d048-80f9-ba57-ef48003fa574" class="" dir="auto">8. 답변을 받지 못한 경우</h2><p id="3a543d8c-d048-804c-ada2-d08207fc3146" class="" dir="auto">다음 사항을 확인해 주세요.</p><ul id="3a543d8c-d048-80b0-a323-f8769ba7297b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이메일 주소를 정확히 입력했는지</li></ul><ul id="3a543d8c-d048-80d5-9d65-fd8b2998d906" class="bulleted-list" dir="auto"><li style="list-style-type:disc">스팸메일함 또는 프로모션함에 답변이 분류되지 않았는지</li></ul><ul id="3a543d8c-d048-806d-9b0b-ff88ccc78219" class="bulleted-list" dir="auto"><li style="list-style-type:disc">추가 확인 요청 메일을 받지 않았는지</li></ul><ul id="3a543d8c-d048-806a-a05c-fd2ebb49a57c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">문의 제목과 가입 이메일을 정확히 작성했는지</li></ul><p id="3a543d8c-d048-803e-a4de-cabd10102347" class="" dir="auto">영업일 기준 5일 이상 답변이 없는 경우 기존 문의 내용을 포함해 다시 문의해 주세요.</p><h2 id="3a543d8c-d048-808e-bad9-e69195d71686" class="" dir="auto">9. 외부 쇼핑몰 및 광고 문의</h2><p id="3a543d8c-d048-8070-bb2f-e5daeb7ba7f1" class="" dir="auto">제휴 쇼핑몰에서 구매한 상품의 다음 사항은 해당 쇼핑몰 또는 판매자에게 직접 문의해야 합니다.</p><ul id="3a543d8c-d048-8079-aeb1-fdbcb7a6a98f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">배송</li></ul><ul id="3a543d8c-d048-80f3-ab4f-cd30d080bdc9" class="bulleted-list" dir="auto"><li style="list-style-type:disc">상품 품질</li></ul><ul id="3a543d8c-d048-8066-bb40-debec49a3f04" class="bulleted-list" dir="auto"><li style="list-style-type:disc">주문 변경</li></ul><ul id="3a543d8c-d048-804d-bfe5-cbf9307f6540" class="bulleted-list" dir="auto"><li style="list-style-type:disc">결제 취소</li></ul><ul id="3a543d8c-d048-8004-b455-fbaa463045a2" class="bulleted-list" dir="auto"><li style="list-style-type:disc">교환 및 반품</li></ul><ul id="3a543d8c-d048-8082-9025-e6d98049b097" class="bulleted-list" dir="auto"><li style="list-style-type:disc">환불</li></ul><p id="3a543d8c-d048-805c-9fbd-f93fe722ddb4" class="" dir="auto">골드만짠스 고객지원에서는 제휴 링크 이용 및 포인트 적립 여부를 확인합니다.</p><p id="3a543d8c-d048-80ca-8b62-d855f64667df" class="" dir="auto">광고에 표시된 상품 또는 서비스의 구매·계약·환불 문제는 해당 광고주 또는 판매자에게 문의해 주세요.</p><h2 id="3a543d8c-d048-8077-8354-c360923382fb" class="" dir="auto">10. 서비스 공지</h2><p id="3a543d8c-d048-80ee-a23e-c0b6a38c300b" class="" dir="auto">다음 사항은 골드만짠스 앱 내 공지사항 또는 공식 서비스 안내 페이지를 통해 안내할 수 있습니다.</p><ul id="3a543d8c-d048-8061-938b-f94070521857" class="bulleted-list" dir="auto"><li style="list-style-type:disc">시스템 점검</li></ul><ul id="3a543d8c-d048-80e5-b37a-f3e81ce2d9df" class="bulleted-list" dir="auto"><li style="list-style-type:disc">서비스 장애</li></ul><ul id="3a543d8c-d048-8078-a314-f9e49f3197e7" class="bulleted-list" dir="auto"><li style="list-style-type:disc">앱 업데이트</li></ul><ul id="3a543d8c-d048-80a8-bfd4-f2d56a953a6b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">포인트 정책 변경</li></ul><ul id="3a543d8c-d048-809d-9033-feb300be550e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠폰 상품 변경</li></ul><ul id="3a543d8c-d048-806a-a5ae-f2a4cf49965e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">제휴 서비스 변경 또는 종료</li></ul><ul id="3a543d8c-d048-802d-90cf-d49c83002057" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인정보처리방침 및 이용약관 변경</li></ul><p id="3a543d8c-d048-807f-849e-e2bbbc2be51b" class="" dir="auto">긴급한 장애 또는 보안 문제는 사전 공지 없이 조치한 후 사후 안내할 수 있습니다.</p><h2 id="3a543d8c-d048-809b-817b-d9830aed7c60" class="" dir="auto">11. 유의사항</h2><ul id="3a543d8c-d048-80ef-8203-e0605f9ae091" class="bulleted-list" dir="auto"><li style="list-style-type:disc">고객지원 담당자는 비밀번호 또는 로그인 인증번호를 요청하지 않습니다.</li></ul><ul id="3a543d8c-d048-8024-a514-f6475c56ee49" class="bulleted-list" dir="auto"><li style="list-style-type:disc">카드번호, 계좌 비밀번호, 주민등록번호 등 민감한 정보를 보내지 마세요.</li></ul><ul id="3a543d8c-d048-807c-8ea8-cad49fd49478" class="bulleted-list" dir="auto"><li style="list-style-type:disc">타인의 계정정보를 이용해 문의할 수 없습니다.</li></ul><ul id="3a543d8c-d048-8082-9b43-c4dbcd3d5fec" class="bulleted-list" dir="auto"><li style="list-style-type:disc">서비스 운영을 방해할 목적의 반복·폭언·허위 문의는 답변 또는 고객지원 이용이 제한될 수 있습니다.</li></ul><ul id="3a543d8c-d048-803b-af8a-cb5a58b8e68b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">부정 이용이 의심되는 경우 서비스 이용기록 확인이 진행될 수 있습니다.</li></ul><hr id="3a543d8c-d048-8092-97db-d736b8223d23" dir="auto"/><p id="3a543d8c-d048-80e2-807c-d8df1a8b8fbf" class="" dir="auto"><strong>시행일: 2026년 8월 1일</strong></p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

@@ -1,0 +1,772 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>골드만짠스 계정 및 데이터 삭제 요청</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure,
+aside,
+details {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style></head><body><article id="3a543d8c-d048-8003-b188-e07e2c60e2b2" class="page sans"><header><h1 class="page-title" dir="auto">골드만짠스 계정 및 데이터 삭제 요청</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><p id="3a543d8c-d048-806d-b8e4-ea72032d5e15" class="" dir="auto">골드만짠스 회원은 앱 또는 고객지원 이메일을 통해 계정과 계정에 연결된 개인정보의 삭제를 요청할 수 있습니다.</p><p id="3a543d8c-d048-80a0-b5cb-c8b2ab608b07" class="" dir="auto">Google Play 정책에 따라 앱에서 계정을 생성할 수 있는 서비스는 앱 내부뿐 아니라 외부 웹페이지에서도 계정 삭제를 요청할 수 있는 경로를 제공해야 합니다. 이 페이지는 골드만짠스 계정 삭제 요청을 위한 공식 안내 페이지입니다.</p><h2 id="3a543d8c-d048-8091-80a6-f69bad7064b1" class="" dir="auto">1. 앱에서 계정을 삭제하는 방법</h2><p id="3a543d8c-d048-80ea-b18a-cb8bcb37c9d0" class="" dir="auto">골드만짠스 앱을 실행한 후 아래 순서로 진행해 주세요.</p><p id="3a543d8c-d048-8049-85ab-e35741a4f2cc" class="" dir="auto"><strong>설정 → 서비스 탈퇴 → 안내사항 확인 → 회원 탈퇴</strong></p><p id="3a543d8c-d048-80f1-a1b5-dc81bc4fbb0d" class="" dir="auto">회원 탈퇴가 완료되면 해당 계정은 더 이상 사용할 수 없습니다.</p><p id="3a543d8c-d048-805c-bef8-f5e91769a671" class="" dir="auto">※ 실제 출시 앱의 메뉴 명칭이 다른 경우 실제 화면과 동일하게 수정됩니다.</p><h2 id="3a543d8c-d048-803b-997a-d594e5b3168e" class="" dir="auto">2. 웹에서 계정 삭제를 요청하는 방법</h2><p id="3a543d8c-d048-80a8-ba29-dcd6144769ef" class="" dir="auto">앱을 이용할 수 없거나 앱에서 직접 탈퇴하기 어려운 경우 아래 이메일로 계정 삭제를 요청할 수 있습니다.</p><ul id="3a543d8c-d048-80ac-bf5b-ee9436fe8f85" class="bulleted-list" dir="auto"><li style="list-style-type:disc">고객지원 이메일: <code>goldman.zzans.official@gmail.com</code></li></ul><ul id="3a543d8c-d048-80d3-b99e-fa69324b76c1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이메일 제목: <code>골드만짠스 계정 삭제 요청</code></li></ul><p id="3a543d8c-d048-80e2-89b2-e7ad0e68fce5" class="" dir="auto">이메일 본문에 다음 내용을 작성해 주세요.</p><ul id="3a543d8c-d048-8088-b95e-f4a5f98a8467" class="bulleted-list" dir="auto"><li style="list-style-type:disc">가입한 이메일 주소</li></ul><ul id="3a543d8c-d048-8034-8436-c026b5f7a185" class="bulleted-list" dir="auto"><li style="list-style-type:disc">닉네임</li></ul><ul id="3a543d8c-d048-80bb-82ac-ee29687722ce" class="bulleted-list" dir="auto"><li style="list-style-type:disc">계정 삭제 요청 의사</li></ul><ul id="3a543d8c-d048-80b3-97d6-ff08c800ff56" class="bulleted-list" dir="auto"><li style="list-style-type:disc">앱을 이용할 수 없는 경우 그 사유</li></ul><h3 id="3a543d8c-d048-80b5-a406-f3420569ec81" class="" dir="auto">요청 예시</h3><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="3a543d8c-d048-8061-a038-fedb3808bae4" class="code code-wrap"><code style="white-space:pre-wrap;word-break:break-all">제목: 골드만짠스 계정 삭제 요청
+
+가입 이메일: example@gmail.com
+닉네임: 골드만회원
+
+골드만짠스 계정과 계정에 연결된 개인정보의 삭제를 요청합니다.</code></pre><h2 id="3a543d8c-d048-803b-ba6d-f6d8e3a2859f" class="" dir="auto">3. 본인 확인</h2><p id="3a543d8c-d048-80dd-944c-db5de60f379d" class="" dir="auto">회사는 다른 사람이 회원의 계정을 임의로 삭제하는 것을 방지하기 위해 요청자에게 본인 확인을 요구할 수 있습니다.</p><p id="3a543d8c-d048-809b-9255-dbc01d25b5f8" class="" dir="auto">본인 확인은 다음과 같은 방법으로 진행될 수 있습니다.</p><ul id="3a543d8c-d048-807a-b7e0-c964b6ff08d3" class="bulleted-list" dir="auto"><li style="list-style-type:disc">가입 이메일로 확인 메일 발송</li></ul><ul id="3a543d8c-d048-80c2-abf0-ebf8817f9150" class="bulleted-list" dir="auto"><li style="list-style-type:disc">회원 닉네임 또는 계정정보 확인</li></ul><ul id="3a543d8c-d048-80d5-9500-ca97fcac8a9a" class="bulleted-list" dir="auto"><li style="list-style-type:disc">최근 서비스 이용내역 확인</li></ul><ul id="3a543d8c-d048-803b-ba4a-f7dda3a0dcdd" class="bulleted-list" dir="auto"><li style="list-style-type:disc">그 밖에 계정 소유 여부를 확인하기 위한 최소한의 정보 확인</li></ul><p id="3a543d8c-d048-808f-8e98-f4bac3a54e25" class="" dir="auto">본인 확인에 필요한 범위를 초과하는 개인정보는 요구하지 않습니다.</p><h2 id="3a543d8c-d048-8024-8a3e-da68ad3f1131" class="" dir="auto">4. 계정 삭제 시 처리되는 정보</h2><p id="3a543d8c-d048-8016-bc35-f1f7303b521b" class="" dir="auto">회원 탈퇴 또는 계정 삭제가 완료되면 다음 정보가 삭제되거나 더 이상 회원 계정과 연결되지 않도록 처리됩니다.</p><ul id="3a543d8c-d048-80a4-9db0-f513edbbbb09" class="bulleted-list" dir="auto"><li style="list-style-type:disc">회원 계정</li></ul><ul id="3a543d8c-d048-8008-8ae1-ca37328a0ae4" class="bulleted-list" dir="auto"><li style="list-style-type:disc">이메일 주소</li></ul><ul id="3a543d8c-d048-80d5-b1f7-f68437ef3fef" class="bulleted-list" dir="auto"><li style="list-style-type:disc">닉네임 및 프로필 정보</li></ul><ul id="3a543d8c-d048-80a4-a900-ea955142571d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">로그인 및 인증정보</li></ul><ul id="3a543d8c-d048-80c9-9d15-f74b8564723a" class="bulleted-list" dir="auto"><li style="list-style-type:disc">일반 포인트와 골드 포인트 잔액</li></ul><ul id="3a543d8c-d048-807e-86f8-f2f88a06b956" class="bulleted-list" dir="auto"><li style="list-style-type:disc">출석, 퀴즈, 룰렛 및 학습 진행정보</li></ul><ul id="3a543d8c-d048-8051-b816-de73b938bd7e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">개인화된 서비스 이용정보</li></ul><ul id="3a543d8c-d048-8021-bbe3-de8f1f314662" class="bulleted-list" dir="auto"><li style="list-style-type:disc">푸시 알림 토큰</li></ul><ul id="3a543d8c-d048-80d6-8721-cf81cb90d587" class="bulleted-list" dir="auto"><li style="list-style-type:disc">그 밖에 계정에 연결된 개인정보</li></ul><p id="3a543d8c-d048-8086-81da-fe28f4700726" class="" dir="auto">계정 삭제 시 보유 중인 일반 포인트와 골드 포인트는 소멸하며 복구할 수 없습니다.</p><h2 id="3a543d8c-d048-8048-9d2b-e2a7501850b3" class="" dir="auto">5. 쿠폰 처리</h2><p id="3a543d8c-d048-805d-8f16-fbd8ab9a9756" class="" dir="auto">계정 삭제 전에 보유한 쿠폰은 삭제 이후 앱에서 확인하거나 이용하기 어려울 수 있습니다.</p><p id="3a543d8c-d048-8029-8e3c-c1cf82681345" class="" dir="auto">따라서 계정 삭제 전에 다음 사항을 확인해 주세요.</p><ul id="3a543d8c-d048-80fb-a003-f8c172782e2c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">미사용 쿠폰 보유 여부</li></ul><ul id="3a543d8c-d048-804c-a14a-ffbebe1bc799" class="bulleted-list" dir="auto"><li style="list-style-type:disc">진행 중인 쿠폰 발급 여부</li></ul><ul id="3a543d8c-d048-8048-a25b-df37114e2e90" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠폰 발급 실패에 따른 환불 처리 여부</li></ul><ul id="3a543d8c-d048-8015-9442-e2fd82aef2d7" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠폰 관련 문의 또는 분쟁 진행 여부</li></ul><p id="3a543d8c-d048-80da-a887-c52037de1113" class="" dir="auto">진행 중인 쿠폰 발급, 환불 또는 오류 처리가 있는 경우 해당 처리가 완료된 후 계정 삭제를 요청하는 것을 권장합니다.</p><h2 id="3a543d8c-d048-80a8-a39b-da11a08060a3" class="" dir="auto">6. 제휴 쇼핑 적립 처리</h2><p id="3a543d8c-d048-8068-90d0-f00b38b70aa1" class="" dir="auto">계정 삭제 시 승인 대기 중인 제휴 쇼핑 실적이나 적립 예정 포인트가 소멸하거나 지급되지 않을 수 있습니다.</p><p id="3a543d8c-d048-80c6-94b7-c2761180a514" class="" dir="auto">계정 삭제 전에 다음 사항을 확인해 주세요.</p><ul id="3a543d8c-d048-80a4-97a2-e9cb368b0489" class="bulleted-list" dir="auto"><li style="list-style-type:disc">적립 대기 중인 제휴 쇼핑 내역</li></ul><ul id="3a543d8c-d048-8031-8d7b-c50ba103662d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">구매 취소 또는 반품 처리 중인 내역</li></ul><ul id="3a543d8c-d048-80ad-9056-ccda16ffa15d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">적립 누락 문의 진행 여부</li></ul><ul id="3a543d8c-d048-8010-9b3d-e996bcbc4195" class="bulleted-list" dir="auto"><li style="list-style-type:disc">제휴사 승인 대기 여부</li></ul><p id="3a543d8c-d048-8027-a15a-e438d119a506" class="" dir="auto">이미 탈퇴한 계정에는 이후 제휴사로부터 승인된 실적이 도착하더라도 포인트 지급이 어려울 수 있습니다.</p><h2 id="3a543d8c-d048-806e-8db0-f30bda94befd" class="" dir="auto">7. 별도로 보관될 수 있는 정보</h2><p id="3a543d8c-d048-80b0-8673-efdefd10c00d" class="" dir="auto">계정 삭제를 요청하더라도 다음 정보는 관계 법령 준수, 부정 이용 방지, 정산 또는 분쟁 처리를 위해 필요한 기간 동안 별도로 보관될 수 있습니다.</p><ul id="3a543d8c-d048-8094-9dc7-efdacbadd0c6" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠폰 구매·발급·환불 기록</li></ul><ul id="3a543d8c-d048-8086-843f-ed32df1f3d71" class="bulleted-list" dir="auto"><li style="list-style-type:disc">제휴 쇼핑 적립·취소 및 정산 기록</li></ul><ul id="3a543d8c-d048-80f7-b1ee-d115e6dd6c85" class="bulleted-list" dir="auto"><li style="list-style-type:disc">고객문의와 분쟁 처리 기록</li></ul><ul id="3a543d8c-d048-80f0-a68e-d7a7a17cab0e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">부정 이용 및 중복가입 방지를 위한 최소한의 식별정보</li></ul><ul id="3a543d8c-d048-8018-becf-fb9d68fa5a6f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">관계 법령상 보존이 필요한 거래 기록</li></ul><p id="3a543d8c-d048-80eb-a507-c3c94ce57614" class="" dir="auto">별도 보관되는 정보는 해당 목적 이외의 용도로 이용하지 않으며, 보존기간이 끝나면 안전하게 삭제합니다.</p><h2 id="3a543d8c-d048-80ea-91ec-c7222d362948" class="" dir="auto">8. 재가입 제한</h2><p id="3a543d8c-d048-80b5-b368-f2ff188f9866" class="" dir="auto">부정 이용 및 반복적인 가입·탈퇴를 방지하기 위해 계정 삭제 후 <strong>30일 동안 재가입이 제한될 수 있습니다.</strong></p><p id="3a543d8c-d048-808b-8290-e3ac852f0471" class="" dir="auto">재가입하더라도 이전 계정의 다음 정보는 복구되지 않습니다.</p><ul id="3a543d8c-d048-8066-ae62-db38758bda5f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">일반 포인트</li></ul><ul id="3a543d8c-d048-8052-9eb7-f12129302606" class="bulleted-list" dir="auto"><li style="list-style-type:disc">골드 포인트</li></ul><ul id="3a543d8c-d048-80ac-ba4d-c9c12be5b54f" class="bulleted-list" dir="auto"><li style="list-style-type:disc">쿠폰</li></ul><ul id="3a543d8c-d048-805a-94fb-f7e13c3d8c2b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">출석 및 퀴즈 기록</li></ul><ul id="3a543d8c-d048-8064-83b0-c3586cae7833" class="bulleted-list" dir="auto"><li style="list-style-type:disc">학습 진행정보</li></ul><ul id="3a543d8c-d048-80cd-b24c-e8850581901c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">기존 계정 이용내역</li></ul><h2 id="3a543d8c-d048-803d-93d4-dce34283b8fd" class="" dir="auto">9. 계정 삭제 처리 기간</h2><p id="3a543d8c-d048-80c4-88ba-e94304535aba" class="" dir="auto">앱에서 직접 회원 탈퇴를 완료한 경우 계정 삭제 절차가 즉시 또는 시스템 처리 절차에 따라 순차적으로 진행됩니다.</p><p id="3a543d8c-d048-80e5-ad9b-f654324146ec" class="" dir="auto">이메일을 통한 삭제 요청은 본인 확인과 진행 중인 거래 여부를 확인한 후 처리합니다.</p><p id="3a543d8c-d048-80f0-b854-e8ad7279ec38" class="" dir="auto">처리 과정에서 추가 확인이 필요한 경우 고객지원 이메일로 안내할 수 있습니다.</p><h2 id="3a543d8c-d048-80eb-90c3-e975a08379a0" class="" dir="auto">10. 계정 일부 데이터만 삭제하고 싶은 경우</h2><p id="3a543d8c-d048-8050-bc4a-e1c1cf54cacd" class="" dir="auto">회원은 계정 전체 삭제 외에도 개인정보의 열람, 정정, 삭제 또는 처리정지를 요청할 수 있습니다.</p><p id="3a543d8c-d048-8022-adaf-fdfbbec19cb7" class="" dir="auto">다음 정보를 포함하여 고객지원 이메일로 요청해 주세요.</p><ul id="3a543d8c-d048-8068-ab5b-fc5e49e94b07" class="bulleted-list" dir="auto"><li style="list-style-type:disc">가입 이메일 주소</li></ul><ul id="3a543d8c-d048-804b-b741-d91d7564d09c" class="bulleted-list" dir="auto"><li style="list-style-type:disc">닉네임</li></ul><ul id="3a543d8c-d048-80d5-b8b2-dc63a2b738ea" class="bulleted-list" dir="auto"><li style="list-style-type:disc">삭제 또는 정정을 원하는 정보</li></ul><ul id="3a543d8c-d048-80f8-9a87-ce8e2a79052b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">요청 사유</li></ul><p id="3a543d8c-d048-8036-a196-c44060cce40c" class="" dir="auto">서비스 제공에 반드시 필요한 정보의 삭제를 요청하는 경우 일부 서비스 이용이 제한되거나 계정 전체를 삭제해야 할 수 있습니다.</p><h2 id="3a543d8c-d048-807a-82e5-eea91b55d0e9" class="" dir="auto">11. 계정 삭제 취소</h2><p id="3a543d8c-d048-8063-8635-e611de70fe1e" class="" dir="auto">계정 삭제가 완료되기 전이라면 고객지원 이메일을 통해 삭제 요청 취소 가능 여부를 문의할 수 있습니다.</p><p id="3a543d8c-d048-8071-91a3-ee438673170f" class="" dir="auto">다만, 계정 및 개인정보 삭제가 이미 완료된 이후에는 계정, 포인트, 골드, 쿠폰 및 이용기록을 복구할 수 없습니다.</p><h2 id="3a543d8c-d048-80ce-bfb4-edc93417f7d3" class="" dir="auto">12. 고객지원</h2><p id="3a543d8c-d048-80bc-a388-dfd5c225263a" class="" dir="auto">계정 및 개인정보 삭제에 관한 문의는 아래 연락처로 접수해 주세요.</p><ul id="3a543d8c-d048-8000-8fb2-e3c958ae63e4" class="bulleted-list" dir="auto"><li style="list-style-type:disc">운영사: YH리워즈</li></ul><ul id="3a543d8c-d048-807d-8649-e1acd469a619" class="bulleted-list" dir="auto"><li style="list-style-type:disc">서비스명: 골드만짠스</li></ul><ul id="3a543d8c-d048-801b-bef7-c3d38d58d6d6" class="bulleted-list" dir="auto"><li style="list-style-type:disc">대표자: 진영현</li></ul><ul id="3a543d8c-d048-8075-9b52-cf5d0cec5869" class="bulleted-list" dir="auto"><li style="list-style-type:disc">고객지원 이메일: <code>goldman.zzans.official@gmail.com</code></li></ul><ul id="3a543d8c-d048-8061-bb32-cbb9f1497e97" class="bulleted-list" dir="auto"><li style="list-style-type:disc">고객지원 전화번호: <code>070-8984-7474</code></li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
