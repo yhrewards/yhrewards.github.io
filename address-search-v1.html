@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; default-src 'none'; script-src 'unsafe-inline' https://t1.kakaocdn.net; style-src 'unsafe-inline'; frame-src https://postcode.map.kakao.com https://postcode.map.daum.net; img-src data: https://t1.kakaocdn.net; base-uri 'none'; form-action 'none'">
+  <title>짠스타워 · 주소 검색</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: #172b27; font: 16px/1.6 system-ui, sans-serif; }
+    #search { width: 100%; height: 500px; min-height: 500px; }
+    #status, #result { margin: 24px; }
+    #result { padding: 20px; border: 1px solid #c4dbd2; border-radius: 16px; background: #eff7f3; }
+    #address { font-size: 19px; font-weight: 700; overflow-wrap: anywhere; }
+    button { border: 0; border-radius: 12px; padding: 14px 20px; background: #184d43; color: #fff; font: inherit; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <p id="status" role="status">주소 검색을 준비하고 있어요.</p>
+  <main id="search" aria-label="우편번호와 주소 검색"></main>
+  <section id="result" aria-live="polite" hidden>
+    <strong>선택한 주소</strong>
+    <p id="postcode"></p>
+    <p id="address"></p>
+    <p>앱 입력 화면에서 동·호수 등 상세주소를 입력해 주세요.</p>
+    <button id="again" type="button">다른 주소 검색</button>
+  </section>
+  <script>
+    (function () {
+      'use strict';
+      const session = new URLSearchParams(location.hash.slice(1)).get('session') || '';
+      const search = document.getElementById('search');
+      const status = document.getElementById('status');
+      const result = document.getElementById('result');
+      let finished = false;
+      let watchdog;
+      function send(type, data) {
+        if (window.ZzansPostcode && /^[a-f0-9]{32}$/.test(session)) {
+          window.ZzansPostcode.postMessage(JSON.stringify(Object.assign({version: 1, session, type}, data)));
+        }
+      }
+      function fail() {
+        if (finished) return;
+        clearTimeout(watchdog);
+        status.hidden = false;
+        status.textContent = '주소 검색을 불러오지 못했어요. 앱에서 다시 시도해 주세요.';
+        send('error');
+      }
+      function openSearch() {
+        clearTimeout(watchdog);
+        finished = false;
+        result.hidden = true;
+        search.hidden = false;
+        watchdog = setTimeout(fail, 18000);
+        try {
+          new kakao.Postcode({
+            width: '100%', height: '100%', minWidth: 280,
+            hideMapBtn: true, hideEngBtn: true,
+            onresize: function (size) {
+              search.style.height = Math.max(500, size.height) + 'px';
+              status.hidden = true;
+              clearTimeout(watchdog);
+              send('ready');
+            },
+            oncomplete: function (data) {
+              if (finished) return;
+              let address = data.userSelectedType === 'R' ? data.roadAddress : data.jibunAddress;
+              address = address || data.address;
+              if (data.userSelectedType === 'R') {
+                const extra = [];
+                if (/[동로가]$/.test(data.bname || '')) extra.push(data.bname);
+                if (data.apartment === 'Y' && data.buildingName) extra.push(data.buildingName);
+                if (extra.length) address += ' (' + extra.join(', ') + ')';
+              }
+              if (!/^\d{5}$/.test(data.zonecode || '') || typeof address !== 'string' || !address.trim() || address.length > 200) {
+                fail();
+                return;
+              }
+              finished = true;
+              clearTimeout(watchdog);
+              send('selected', {postcode: data.zonecode, address: address.trim()});
+              document.getElementById('postcode').textContent = '우편번호 ' + data.zonecode;
+              document.getElementById('address').textContent = address.trim();
+              status.hidden = true;
+              search.hidden = true;
+              result.hidden = false;
+            }
+          }).embed(search, {autoClose: false});
+        } catch (_) { fail(); }
+      }
+      document.getElementById('again').addEventListener('click', openSearch);
+      const script = document.createElement('script');
+      script.src = 'https://t1.kakaocdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js';
+      script.onload = openSearch;
+      script.onerror = fail;
+      document.head.appendChild(script);
+      watchdog = setTimeout(fail, 18000);
+    }());
+  </script>
+</body>
+</html>
